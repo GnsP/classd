@@ -1,0 +1,42 @@
+{
+  "name": "classd",
+  "version": "1.0.0",
+  "description": "A fast and minimal ES6 utility to conditionally compose classnames",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "npm run build && mocha tests/*.js",
+    "benchmark": "open-cli benchmarks/index.html",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GnsP/classd.git"
+  },
+  "keywords": [
+    "react",
+    "css",
+    "classes",
+    "classnames",
+    "classname",
+    "util",
+    "utility"
+  ],
+  "author": "Ganesh Prasad <GnsP>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GnsP/classd/issues"
+  },
+  "homepage": "https://github.com/GnsP/classd#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "benchmark": "^2.1.4",
+    "mocha": "^6.2.0",
+    "open-cli": "^5.0.0",
+    "rollup": "^1.20.3",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}

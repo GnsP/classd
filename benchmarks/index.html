@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Classd Benchmark</title>
+    <style type='text/css'>
+        #output {
+            width: 100%;
+            text-wrap: wrap;
+            font-family: monospace;
+            font-size: 13pt;
+            line-height: 1.618;
+            color: #2b2b2b;
+        } 
+    </style>
+  </head>
+
+  <body>
+    <pre id='output'></pre>
+    <script src='../node_modules/lodash/lodash.min.js'></script>
+    <script src='../node_modules/platform/platform.js'></script>
+    <script src='../node_modules/benchmark/benchmark.js'></script>
+
+    <script src='../lib/index.js'></script>
+    <script src='./classnames.js'></script>
+    <script src='./classnamesDedupe.js'></script>
+    <script src='./index.js'></script>
+  </body>
+</html>
